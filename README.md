@@ -1,17 +1,17 @@
 # Financial-Report-Generator-And-Investment-Advisor
 
-Welcome to the Financial Intelligence Suite—a comprehensive, user-friendly platform that leverages the power of Generative AI (GenAI) and Natural Language Processing (NLP) to help you analyze financial reports, extract insights from financial news, and receive personalized investment advice. This project is designed for both beginners and advanced users, making financial data analysis accessible and insightful for everyone.
+Welcome to the Financial-Report-Generator-And-Investment-Advisor—a comprehensive, user-friendly platform that leverages the power of Generative AI (GenAI) and Natural Language Processing (NLP) to help you analyze financial reports, extract insights from financial news, and receive personalized investment advice. This project is designed for both beginners and advanced users, making financial data analysis accessible and insightful for everyone.
 
 Project Overview
-This suite consists of three main modules:
+This repository consists of three main modules:
 
-1. Financial Report Analyzer:
+1. Financial Report Generator:
 Fetch and preprocess real-time financial data for stocks and economic indicators.
 
 2. Financial News QA Bot:
 Ask questions about any financial news article and get instant, AI-generated answers with sources.
 
-3. AI Financial Advisor:
+3. Investment Advisor:
 Upload your financial data and receive personalized investment suggestions powered by a state-of-the-art language model.
 
 Key Features
@@ -28,7 +28,7 @@ Customizable and Extensible:
 Built with modular Python code and Streamlit for easy customization and deployment.
 
 How It Works
-1. Financial Report Analyzer
+1. Financial Report Generator
 Fetches financial data (e.g., stock prices, earnings announcements) from APIs like Financial Modeling Prep.
 
 Preprocesses data for analysis, converting dates and cleaning columns.
@@ -60,7 +60,7 @@ LLM-powered QA using Google FLAN-T5.
 
 Built with Streamlit for interactive UI.
 
-3. AI Financial Advisor
+3. Investment Advisor
 Upload your financial data (CSV format).
 
 Ask investment-related questions (e.g., "What are my best options for retirement savings?").
@@ -81,7 +81,11 @@ Streamlit interface for easy interaction.
 
 Getting Started
 Prerequisites
-Python 3.8+
+To run this project, ensure you have:
+
+Python 3.9+
+
+Installed the following Python libraries:
 
 Streamlit
 
@@ -91,16 +95,16 @@ LangChain
 
 Pandas
 
-FAISS and/or Chroma
+FAISS or Chroma
 
-API key for Financial Modeling Prep
+An API key from Financial Modeling Prep.
 
 Installation
 Clone the repository:
 
 bash
-git clone https://github.com/yourusername/financial-intelligence-suite.git
-cd financial-intelligence-suite
+git clone https://github.com/yourusername/Financial-Report-Generator-And-Investment-Advisor.git
+cd Financial-Report-Generator-And-Investment-Advisor
 Install dependencies:
 
 bash
@@ -108,53 +112,53 @@ pip install -r requirements.txt
 Set up your API keys in the code where indicated.
 
 Usage
-1. Financial Report Analyzer
-Run the script to fetch and preprocess financial data.
+1. Financial Report Generator
+Run the script to fetch, preprocess, and export financial data:
 
-Exported CSV can be used for further analysis.
-
+bash
+python financial_report_generator.py
 2. Financial News QA Bot
-Launch with Streamlit:
+Launch the app using Streamlit:
 
 bash
 streamlit run news_qa_app.py
-Paste a news article URL and ask your question.
+Paste a news article URL into the input field, ask your question, and get AI-driven insights.
 
-3. AI Financial Advisor
-Launch with Streamlit:
+3. Investment Advisor
+Launch the app using Streamlit:
 
 bash
-streamlit run financial_advisor_app.py
-Upload your financial data CSV and enter your investment query.
+streamlit run investment_advisor_app.py
+Upload your CSV file containing financial preferences or objectives, enter your query, and receive personalized investment advice.
 
 Technical Concepts Explained
+For those familiar with Generative AI or looking to understand its technical aspects:
+
 GenAI (Generative AI):
-AI models that can generate human-like text, answer questions, and provide recommendations.
+AI models that can generate human-like text, answer questions, and provide recommendations based on context.
 
 LLM (Large Language Model):
 Advanced AI models trained on vast amounts of text data to understand and generate language (e.g., FLAN-T5, Zephyr 7B).
 
 Embeddings:
-Numerical representations of text that allow the AI to understand semantic meaning and perform similarity searches.
+Numerical representations of text that allow the AI to understand semantic meaning and perform similarity searches efficiently.
 
 Vector Database:
 Stores embeddings for fast retrieval of relevant information based on user queries.
 
 Retrieval-Augmented Generation (RAG):
-Combines information retrieval with text generation to provide accurate, context-aware answers.
+Combines information retrieval with text generation to provide accurate, context-aware answers by grounding responses in retrieved documents.
 
 Example Use Cases
 For Beginners:
-
 "What does this financial report mean for my investments?"
 
 "Summarize this news article for me."
 
 For Advanced Users:
-
 "How does the earnings announcement impact the stock's valuation?"
 
 "Compare investment avenues based on user-uploaded data."
 
 Contributing
-Contributions are welcome! Please open issues or submit pull requests for improvements.
+Contributions are welcome! Please open issues or submit pull requests to improve functionality or add new features.
